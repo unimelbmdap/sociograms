@@ -9,10 +9,29 @@ person = pd.read_excel('Sociograms.xlsx', sheet_name="Persons")
 
 # edges
 edgecols = ['source', 'target']
+edges.drop(['id','relationship','platform'],axis=1,inplace=True)
 edges.drop_duplicates(subset=edgecols, keep="first",inplace=True,ignore_index=True)
-print(edges[edges['source']=="Me"])
-# need to de-dupe
-edges[edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
+edgeToMe = list(edges[edges['source']=="Me"]['target'])
+truncatedEdges = list(edges[edges['source'].isin(edgeToMe)]['target'].unique())
+nextlevelEdges = list(edges[edges['source'].isin(truncatedEdges)]['target'].unique())
+nextnextlevelEdges = list(edges[edges['source'].isin(nextlevelEdges)]['target'].unique())
+print(edgeToMe)
+print(truncatedEdges)
+print(nextlevelEdges)
+print("nodes with next level Edges as source - think about dropping them")
+print(nextnextlevelEdges)
+print("are there another level again? - think about dropping them")
+print(list(edges[edges['source'].isin(nextnextlevelEdges)]['target'].unique()))
+
+
+# next to try is more star shape so
+# Me - Platform - Who to - What
+# so if who to is not specified has value 'unspecified' or '' blank?
+
+
+# testing, just drop the outer node links (so they'll be orphans)
+edges[~edges['source'].isin(nextlevelEdges)][edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
+# edges[edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
 
 # nodes
 nodes['label'] = nodes['name']
