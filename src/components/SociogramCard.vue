@@ -23,7 +23,6 @@ const props = defineProps({
   snodes: [],
   sedges: []
 })
-const NODE_COUNT = 2000
 
 const nodes = reactive({})
 const edges = reactive({})
@@ -77,25 +76,6 @@ const configs = reactive(
   })
 )
 
-buildNetwork(NODE_COUNT, nodes, edges)
-
-function buildNetwork(count: number, nodes: vNG.Nodes, edges: vNG.Edges) {
-  const idNums = [...Array(count)].map((_, i) => i)
-
-  // nodes
-  const newNodes = idNums.map(id => [`node${id}`, { id: `node${id}` }])
-  Object.assign(nodes, Object.fromEntries(newNodes))
-
-  // edges
-  const makeEdgeEntry = (id1: number, id2: number) => {
-    return [`edge${id1}-${id2}`, { source: `node${id1}`, target: `node${id2}` }]
-  }
-  const newEdges = []
-  for (let i = 1; i < count; i++) {
-    newEdges.push(makeEdgeEntry(Math.floor(i / 4), i))
-  }
-  Object.assign(edges, Object.fromEntries(newEdges))
-}
 </script>
 
 <style>
