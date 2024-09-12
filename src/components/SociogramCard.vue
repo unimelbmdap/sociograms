@@ -1,32 +1,41 @@
 <template>
-  <div class="h-screen">
+  <div>
+    <select v-model="selectedNodes">
+     <option v-for="(node,key) in props.snodes"
+      :key="key"
+      :label="node.label"
+      :value="key"></option></select>
+    </div>
+  <div class="h-full">
     <v-network-graph
+      vmodel:selected-nodes="selectedNodes"
       :zoom-level="0.5"
       :nodes="props.snodes" 
       :edges="props.sedges" 
       :layouts="layouts"
       :configs="configs"> 
-      <template>
-      </template>
   </v-network-graph>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, reactive} from "vue"
+import { ref, reactive, watch} from "vue"
 import * as vNG from "v-network-graph"
 
 import {ForceLayout} from "v-network-graph/lib/force-layout"
 import type {ForceNodeDatum,ForceEdgeDatum} from "v-network-graph/lib/force-layout"
 
+
 const props = defineProps({
   snodes: [],
   sedges: []
 })
-const NODE_COUNT = 2000
+
+//defineEmits(['selectedNodes'])
 
 const nodes = reactive({})
 const edges = reactive({})
+const selectedNodes = ref<string[]>([])
 
 // The fixed position of the node can be specified.
 const layouts = ref({
@@ -51,51 +60,29 @@ const configs = reactive(
           return d3
             .forceSimulation(nodes)
             .force("edge", forceLink.distance(80).strength(0.05))
-            .force("charge", d3.forceManyBody().strength(-300))
+            .force("charge", d3.forceManyBody().strength(-500))
+            .force("center", d3.forceCenter().strength(0.05))
             .alphaMin(0.001)
-        },
-    node: {
-      label: {
-        visible: true,
-        fontFamily: undefined,
-        fontSize: 11,
-        lineHeight: 1.1,
-        color: "#000000",
-        margin: 4,
-        direction: "south",
-        text: "name"
-      }
-  },
+        }
       }),
     },
     node: {
       normal: {
+        type: n => n.label === "Me" ? 'circle' : 'rect',
         color: n =>  n.color,
         radius: n => (n.label === "Me" ? 50 : 20)
       },
+      selectable: 1,
+      label: {
+        fontSize: n => n.label === "Me" ? 20 : 11,
+        direction: n => n.label === "Me" ? 'center' : 'south'
+      }
     },
   })
 )
 
-buildNetwork(NODE_COUNT, nodes, edges)
+defineEmits(['selectedNodes'])
 
-function buildNetwork(count: number, nodes: vNG.Nodes, edges: vNG.Edges) {
-  const idNums = [...Array(count)].map((_, i) => i)
-
-  // nodes
-  const newNodes = idNums.map(id => [`node${id}`, { id: `node${id}` }])
-  Object.assign(nodes, Object.fromEntries(newNodes))
-
-  // edges
-  const makeEdgeEntry = (id1: number, id2: number) => {
-    return [`edge${id1}-${id2}`, { source: `node${id1}`, target: `node${id2}` }]
-  }
-  const newEdges = []
-  for (let i = 1; i < count; i++) {
-    newEdges.push(makeEdgeEntry(Math.floor(i / 4), i))
-  }
-  Object.assign(edges, Object.fromEntries(newEdges))
-}
 </script>
 
 <style>
