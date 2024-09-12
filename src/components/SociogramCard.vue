@@ -1,12 +1,11 @@
 <template>
   <div>
-    <select v-model="selectedNodes">
-     <option v-for="(node,key) in props.snodes"
-      :key="key"
-      :label="node.label"
-      :value="key"></option></select>
-    </div>
-  <div class="h-full">
+
+      <button class="text-sm font-medium border border-gray-200 rounded-full px-3 py-1 hover:bg-gray-100" @click="$emit('selectInstaNode')">
+        Select Instagram Node
+      </button>
+ </div>
+  <div class="h-96">
     <v-network-graph
       vmodel:selected-nodes="selectedNodes"
       :zoom-level="0.5"
@@ -19,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, watch} from "vue"
+import { ref, reactive} from "vue"
 import * as vNG from "v-network-graph"
 
 import {ForceLayout} from "v-network-graph/lib/force-layout"
@@ -31,7 +30,8 @@ const props = defineProps({
   sedges: []
 })
 
-//defineEmits(['selectedNodes'])
+defineEmits(['selectInstaNode'])
+
 
 const nodes = reactive({})
 const edges = reactive({})
@@ -80,8 +80,6 @@ const configs = reactive(
     },
   })
 )
-
-defineEmits(['selectedNodes'])
 
 </script>
 
