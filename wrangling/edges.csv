@@ -1,633 +1,276 @@
-id,source,srcLvel,relationship,target,tarLvel,diff,platform
-1,Me,1,through,BeReal,2,1,BeReal
-1,Me,1,through,Instagram,2,1,Instagram
-1,Me,1,through,Snapchat,2,1,Snapchat
-1,Me,1,through,SMS Text,2,1,SMS Text
-1,BeReal,2,with,Close friends,3,1,BeReal
-1,Instagram,2,with,Close friends,3,1,Instagram
-1,Instagram,2,with,Family,3,1,Instagram
-1,Instagram,2,with,Acquaintances,3,1,Instagram
-1,Instagram,2,with,Teachers,3,1,Instagram
-1,Snapchat,2,with,Friends,3,1,Snapchat
-1,SMS Text,2,with,Close friends,3,1,SMS Text
-1,SMS Text,2,with,Family,3,1,SMS Text
-1,BeReal,2,what,Everyday photos,4,2,BeReal
-1,Instagram,2,what,Aesthetic photos,4,2,Instagram
-1,Instagram,2,what,Important events ,4,2,Instagram
-1,Instagram,2,what,Fun/funny photos,4,2,Instagram
-1,Snapchat,2,what,Selfie,4,2,Snapchat
-1,Snapchat,2,what,Fun/funny photos,4,2,Snapchat
-1,Snapchat,2,what,Everyday photos,4,2,Snapchat
-1,SMS Text,2,what,Nice memories,4,2,SMS Text
-1,SMS Text,2,what,Screenshots,4,2,SMS Text
-1,BeReal,2,with,Everyday photos,4,1,BeReal
-1,Instagram,2,with,Aesthetic photos,4,1,Instagram
-1,Instagram,2,with,Important events ,4,1,Instagram
-1,Instagram,2,with,Fun/funny photos,4,1,Instagram
-1,Snapchat,2,with,Selfie,4,1,Snapchat
-1,Snapchat,2,with,Fun/funny photos,4,1,Snapchat
-1,Snapchat,2,with,Everyday photos,4,1,Snapchat
-1,SMS Text,2,with,Nice memories,4,1,SMS Text
-1,SMS Text,2,with,Screenshots,4,1,SMS Text
-2,Me,1,through,SMS Text,2,1,SMS Text
-2,Me,1,through,WhatsApp,2,1,WhatsApp
-2,Me,1,through,Email,2,1,Email
-2,Me,1,through,Print,2,1,Print
-2,Me,1,through,Dropbox,2,1,Dropbox
-2,Me,1,through,Signal,2,1,Signal
-2,SMS Text,2,with,Friends,3,1,SMS Text
-2,SMS Text,2,with,Family,3,1,SMS Text
-2,SMS Text,2,with,Cousins,3,1,SMS Text
-2,WhatsApp,2,with,Friends,3,1,WhatsApp
-2,WhatsApp,2,with,Family,3,1,WhatsApp
-2,WhatsApp,2,with,Cousins,3,1,WhatsApp
-2,Email,2,with,Colleagues,3,1,Email
-2,Email,2,with,Collaborators,3,1,Email
-2,Print,2,with,Family,3,1,Print
-2,Print,2,with,Kids' friends,3,1,Print
-2,Dropbox,2,with,Colleagues,3,1,Dropbox
-2,Dropbox,2,with,Collaborators,3,1,Dropbox
-2,Signal,2,with,Family,3,1,Signal
-2,Signal,2,with,Friends,3,1,Signal
-2,Signal,2,with,Cousins,3,1,Signal
-2,SMS Text,2,what,Photo-worthy moments,4,2,SMS Text
-2,WhatsApp,2,what,Photo-worthy moments,4,2,WhatsApp
-2,Email,2,what,"Work, projects",4,2,Email
-2,Print,2,what,"Work, projects",4,2,Print
-2,Print,2,what,Holidays,4,2,Print
-2,Dropbox,2,what,"Work, projects",4,2,Dropbox
-2,Signal,2,what,Photo-worthy moments,4,2,Signal
-2,SMS Text,2,with,Photo-worthy moments,4,1,SMS Text
-2,WhatsApp,2,with,Photo-worthy moments,4,1,WhatsApp
-2,Email,2,with,"Work, projects",4,1,Email
-2,Print,2,with,"Work, projects",4,1,Print
-2,Print,2,with,Holidays,4,1,Print
-2,Dropbox,2,with,"Work, projects",4,1,Dropbox
-2,Signal,2,with,Photo-worthy moments,4,1,Signal
-3,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-3,Me,1,through,Signal,2,1,Signal
-3,Me,1,through,WhatsApp,2,1,WhatsApp
-3,Me,1,through,Google Street View,2,1,Google Street View
-3,Me,1,through,Personal website,2,1,Personal website
-3,Me,1,through,LinkedIn,2,1,LinkedIn
-3,Facebook Messenger,2,with,Friends,3,1,Facebook Messenger
-3,Facebook Messenger,2,with,Family,3,1,Facebook Messenger
-3,Facebook Messenger,2,with,Work/business/customers,3,1,Facebook Messenger
-3,Signal,2,with,Close friends,3,1,Signal
-3,Signal,2,with,Family,3,1,Signal
-3,WhatsApp,2,with,Childcare group,3,1,WhatsApp
-3,WhatsApp,2,with,Friends,3,1,WhatsApp
-3,WhatsApp,2,with,Family,3,1,WhatsApp
-3,Personal website,2,with,Work/business/customers,3,1,Personal website
-3,Google Street View,2,what,Place reviews,4,2,Google Street View
-3,Google Street View,2,what,360 virtual tour,4,2,Google Street View
-3,LinkedIn,2,what,"Work, projects",4,2,LinkedIn
-3,Google Street View,2,with,Place reviews,4,1,Google Street View
-3,Google Street View,2,with,360 virtual tour,4,1,Google Street View
-3,LinkedIn,2,with,"Work, projects",4,1,LinkedIn
-4,Me,1,through,SMS Text,2,1,SMS Text
-4,Me,1,through,Print,2,1,Print
-4,Me,1,through,Personal notes,2,1,Personal notes
-4,Me,1,through,WhatsApp,2,1,WhatsApp
-4,SMS Text,2,with,Family,3,1,SMS Text
-4,SMS Text,2,with,Friends,3,1,SMS Text
-4,SMS Text,2,with,Colleagues,3,1,SMS Text
-4,Print,2,with,Family,3,1,Print
-4,Print,2,with,Friends,3,1,Print
-4,WhatsApp,2,with,Family,3,1,WhatsApp
-4,Personal notes,2,what,"Work, projects",4,2,Personal notes
-4,Personal notes,2,with,"Work, projects",4,1,Personal notes
-4,Family,3,what,Animals/pets,4,1,SMS Text
-4,Family,3,what,Holidays,4,1,SMS Text
-4,Friends,3,what,Social photos,4,1,SMS Text
-4,Colleagues,3,what,Landscape/architecture,4,1,SMS Text
-4,Family,3,what,Homemade cards,4,1,Print
-4,Friends,3,what,Homemade cards,4,1,Print
-5,Me,1,through,Instagram,2,1,Instagram
-5,Me,1,through,Personal website,2,1,Personal website
-5,Me,1,through,Google Drive,2,1,Google Drive
-5,Me,1,through,SMS Text,2,1,SMS Text
-5,Google Drive,2,with,Colleagues,3,1,Google Drive
-5,Google Drive,2,with,Friends,3,1,Google Drive
-5,SMS Text,2,with,Friends,3,1,SMS Text
-5,SMS Text,2,with,Colleagues,3,1,SMS Text
-5,Instagram,2,what,Landscape/architecture,4,2,Instagram
-5,Instagram,2,what,People,4,2,Instagram
-5,Instagram,2,what,Objects,4,2,Instagram
-5,Instagram,2,what,Digitised film photos,4,2,Instagram
-5,Instagram,2,what,Plants,4,2,Instagram
-5,Personal website,2,what,Landscape/architecture,4,2,Personal website
-5,Personal website,2,what,People,4,2,Personal website
-5,Personal website,2,what,Objects,4,2,Personal website
-5,Personal website,2,what,Digitised film photos,4,2,Personal website
-5,Personal website,2,what,Plants,4,2,Personal website
-5,Instagram,2,with,Landscape/architecture,4,1,Instagram
-5,Instagram,2,with,People,4,1,Instagram
-5,Instagram,2,with,Objects,4,1,Instagram
-5,Instagram,2,with,Digitised film photos,4,1,Instagram
-5,Instagram,2,with,Plants,4,1,Instagram
-5,Personal website,2,with,Landscape/architecture,4,1,Personal website
-5,Personal website,2,with,People,4,1,Personal website
-5,Personal website,2,with,Objects,4,1,Personal website
-5,Personal website,2,with,Digitised film photos,4,1,Personal website
-5,Personal website,2,with,Plants,4,1,Personal website
-5,Friends,3,what,Memes,4,1,SMS Text
-5,Friends,3,what,Plants,4,1,SMS Text
-5,Colleagues,3,what,"Work, projects",4,1,SMS Text
-6,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-6,Me,1,through,SMS Text,2,1,SMS Text
-6,Me,1,through,Instagram,2,1,Instagram
-6,Instagram,2,through,Instagram Stories,2,0,Instagram
-6,Facebook Messenger,2,with,Group chat,3,1,Facebook Messenger
-6,SMS Text,2,with,Partner,3,1,SMS Text
-6,SMS Text,2,with,Close friends,3,1,SMS Text
-6,Instagram,2,what,Memes,4,2,Instagram
-6,Instagram,2,what,Humour,4,2,Instagram
-6,Instagram Stories,2,what,Social photos,4,2,Instagram
-6,Instagram Stories,2,what,Everyday activities,4,2,Instagram
-6,Instagram,2,with,Memes,4,1,Instagram
-6,Instagram,2,with,Humour,4,1,Instagram
-6,Instagram,2,with,Social photos,4,1,Instagram
-6,Instagram,2,with,Everyday activities,4,1,Instagram
-6,Group chat,3,what,Meals,4,1,Facebook Messenger
-6,Partner,3,what,Animals/pets,4,1,SMS Text
-6,Partner,3,what,Note-taking,4,1,SMS Text
-6,Partner,3,what,Humour,4,1,SMS Text
-6,Close friends,3,what,Shared Interests,4,1,SMS Text
-6,Close friends,3,what,Humour,4,1,SMS Text
-6,Group chat,3,with,Humour,4,1,Instagram
-7,Me,1,through,SMS Text,2,1,SMS Text
-7,Me,1,through,WhatsApp,2,1,WhatsApp
-7,Me,1,through,Print,2,1,Print
-7,Me,1,through,Instagram,2,1,Instagram
-7,SMS Text,2,with,Friends,3,1,SMS Text
-7,SMS Text,2,with,Family,3,1,SMS Text
-7,SMS Text,2,with,Colleagues,3,1,SMS Text
-7,WhatsApp,2,with,Family,3,1,WhatsApp
-7,WhatsApp,2,with,Group chat,3,1,WhatsApp
-7,Print,2,with,Friends,3,1,Print
-7,Instagram,2,with,Close friends,3,1,Instagram
-7,Instagram,2,with,Family,3,1,Instagram
-7,Instagram,2,what,Activism,4,2,Instagram
-7,Instagram,2,with,Activism,4,1,Instagram
-7,Friends,3,what,Memes,4,1,SMS Text
-7,Family,3,what,Selfie,4,1,SMS Text
-7,Colleagues,3,what,"Work, projects",4,1,SMS Text
-7,Family,3,what,Selfie,4,1,WhatsApp
-7,Family,3,what,Social photos,4,1,WhatsApp
-7,Group chat,3,what,Shared Interests,4,1,WhatsApp
-7,Friends,3,what,Gift,4,1,Print
-7,Close friends,3,what,Individual interests,4,1,Instagram
-7,Family,3,what,Individual interests,4,1,Instagram
-8,Me,1,through,SMS Text,2,1,SMS Text
-8,Me,1,through,Instagram,2,1,Instagram
-8,Me,1,through,Print,2,1,Print
-8,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-8,SMS Text,2,with,Friends,3,1,SMS Text
-8,SMS Text,2,with,Family,3,1,SMS Text
-8,Instagram,2,with,Friends,3,1,Instagram
-8,Instagram,2,with,Family,3,1,Instagram
-8,Instagram,2,with,Public,3,1,Instagram
-8,Facebook Messenger,2,with,Friends,3,1,Facebook Messenger
-8,Print,2,what,Holidays,4,2,Print
-8,Print,2,what,"Work, projects",4,2,Print
-8,Print,2,with,Holidays,4,1,Print
-8,Print,2,with,"Work, projects",4,1,Print
-8,Friends,3,what,Social photos,4,1,SMS Text
-8,Family,3,what,Animals/pets,4,1,SMS Text
-8,Friends,3,what,Screenshots,4,1,SMS Text
-8,Family,3,what,Old photos,4,1,SMS Text
-8,Friends,3,what,Social photos,4,1,Instagram
-8,Family,3,what,Social photos,4,1,Instagram
-8,Family,3,what,Old photos,4,1,Instagram
-8,Public,3,what,"Work, projects",4,1,Instagram
-8,Friends,3,what,Screenshots,4,1,Facebook Messenger
-8,Friends,3,what,Animals/pets,4,1,Facebook Messenger
-8,Friends,3,what,Social photos,4,1,Facebook Messenger
-8,Friends,3,what,Old photos,4,1,Facebook Messenger
-9,Me,1,through,WhatsApp,2,1,WhatsApp
-9,Me,1,through,SMS Text,2,1,SMS Text
-9,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-9,Me,1,through,HelloTalk,2,1,HelloTalk
-9,Me,1,through,Hardrive storage,2,1,Hardrive storage
-9,Me,1,through,Instagram,2,1,Instagram
-9,Me,1,through,Camera Roll,2,1,Camera Roll
-9,Instagram,2,through,Instagram Stories,2,0,Instagram
-9,WhatsApp,2,with,Colleagues,3,1,WhatsApp
-9,WhatsApp,2,with,Friends without social media,3,1,WhatsApp
-9,SMS Text,2,with,Family,3,1,SMS Text
-9,SMS Text,2,with,Mum,3,1,SMS Text
-9,SMS Text,2,with,Friends,3,1,SMS Text
-9,Facebook Messenger,2,with,Friends,3,1,Facebook Messenger
-9,Facebook Messenger,2,with,Family,3,1,Facebook Messenger
-9,HelloTalk,2,with,Learning community,3,1,HelloTalk
-9,Hardrive storage,2,with,Friends,3,1,Hardrive storage
-9,Instagram,2,with,Group chat,3,1,Instagram
-9,Instagram Stories,2,with,Friends,3,1,Instagram
-9,Instagram Stories,2,with,Public,3,1,Instagram
-9,Camera Roll,2,what,Screenshots,4,2,Camera Roll
-9,Camera Roll,2,what,Memes,4,2,Camera Roll
-9,Camera Roll,2,what,Holidays,4,2,Camera Roll
-9,Camera Roll,2,what,Note-taking,4,2,Camera Roll
-9,Camera Roll,2,what,"Work, projects",4,2,Camera Roll
-9,Camera Roll,2,what,Individual interests,4,2,Camera Roll
-9,Camera Roll,2,what,Meals,4,2,Camera Roll
-9,Camera Roll,2,with,Screenshots,4,1,Camera Roll
-9,Camera Roll,2,with,Memes,4,1,Camera Roll
-9,Camera Roll,2,with,Holidays,4,1,Camera Roll
-9,Camera Roll,2,with,Note-taking,4,1,Camera Roll
-9,Camera Roll,2,with,"Work, projects",4,1,Camera Roll
-9,Camera Roll,2,with,Individual interests,4,1,Camera Roll
-9,Camera Roll,2,with,Meals,4,1,Camera Roll
-9,Colleagues,3,what,"Work, projects",4,1,WhatsApp
-9,Family,3,what,Family photos,4,1,SMS Text
-9,Family,3,what,"Work, projects",4,1,SMS Text
-9,Mum,3,what,Everyday activities,4,1,SMS Text
-9,Friends,3,what,Memes,4,1,SMS Text
-9,Friends,3,what,Shared Interests,4,1,SMS Text
-9,Friends,3,what,Memes,4,1,Facebook Messenger
-9,Friends,3,what,Everyday activities,4,1,Facebook Messenger
-9,Family,3,what,Family photos,4,1,Facebook Messenger
-9,Learning community,3,what,Scenery,4,1,HelloTalk
-9,Friends,3,what,Old photos,4,1,Hardrive storage
-9,Friends,3,what,Shared experience,4,1,Hardrive storage
-9,Group chat,3,what,Memes,4,1,Instagram
-9,Friends,3,what,Meals,4,1,Instagram
-9,Friends,3,what,Social photos,4,1,Instagram
-9,Friends,3,what,Everyday activities,4,1,Instagram
-9,Public,3,what,Individual interests,4,1,Instagram
-9,Public,3,what,"Work, projects",4,1,Instagram
-10,Me,1,through,Print,2,1,Print
-10,Me,1,through,Instagram,2,1,Instagram
-10,Me,1,through,Camera Roll,2,1,Camera Roll
-10,Me,1,through,SMS Text,2,1,SMS Text
-10,Me,1,through,Slack,2,1,Slack
-10,Me,1,through,Hinge,2,1,Hinge
-10,Me,1,through,Airdrop,2,1,Airdrop
-10,Me,1,through,DADAABC,2,1,DADAABC
-10,Print,2,with,Family,3,1,Print
-10,Instagram,2,with,Friends,3,1,Instagram
-10,SMS Text,2,with,Family,3,1,SMS Text
-10,SMS Text,2,with,Close friends,3,1,SMS Text
-10,SMS Text,2,with,Colleagues,3,1,SMS Text
-10,Slack,2,with,Colleagues,3,1,Slack
-10,Airdrop,2,with,Colleagues,3,1,Airdrop
-10,Airdrop,2,with,Friends,3,1,Airdrop
-10,DADAABC,2,with,Learning community,3,1,DADAABC
-10,Camera Roll,2,what,Note-taking,4,2,Camera Roll
-10,Camera Roll,2,what,Nice memories,4,2,Camera Roll
-10,Hinge,2,what,Selfie,4,2,Hinge
-10,Camera Roll,2,with,Note-taking,4,1,Camera Roll
-10,Camera Roll,2,with,Nice memories,4,1,Camera Roll
-10,Hinge,2,with,Selfie,4,1,Hinge
-10,Family,3,what,Gift,4,1,Print
-10,Friends,3,what,Scenery,4,1,Instagram
-10,Friends,3,what,Selfie,4,1,Instagram
-10,Friends,3,what,Meals,4,1,Instagram
-10,Friends,3,what,Animals/pets,4,1,Instagram
-10,Friends,3,what,Family photos,4,1,Instagram
-10,Friends,3,what,Social photos,4,1,Instagram
-10,Family,3,what,Animals/pets,4,1,SMS Text
-10,Family,3,what,People,4,1,SMS Text
-10,Family,3,what,Humour,4,1,SMS Text
-10,Close friends,3,what,Everyday activities,4,1,SMS Text
-10,Close friends,3,what,Important events ,4,1,SMS Text
-10,Close friends,3,what,Life updates,4,1,SMS Text
-10,Colleagues,3,what,Shared experience,4,1,SMS Text
-10,Colleagues,3,what,"Work, projects",4,1,Slack
-10,Colleagues,3,what,Shared experience,4,1,Slack
-10,Colleagues,3,what,"Work, projects",4,1,Airdrop
-10,Friends,3,what,Shared experience,4,1,Airdrop
-10,Learning community,3,what,Note-taking,4,1,DADAABC
-11,Me,1,through,SMS Text,2,1,SMS Text
-11,Me,1,through,Email,2,1,Email
-11,Me,1,through,Dropbox,2,1,Dropbox
-11,Me,1,through,Personal website,2,1,Personal website
-11,Me,1,through,Instagram,2,1,Instagram
-11,Me,1,through,Print,2,1,Print
-11,SMS Text,2,with,Friends,3,1,SMS Text
-11,Email,2,with,Collaborators,3,1,Email
-11,Dropbox,2,with,Collaborators,3,1,Dropbox
-11,Personal website,2,with,Public,3,1,Personal website
-11,Instagram,2,with,Public,3,1,Instagram
-11,Print,2,with,Collaborators,3,1,Print
-11,Print,2,with,Public,3,1,Print
-11,Friends,3,what,Shared experience,4,1,SMS Text
-11,Collaborators,3,what,Old photos,4,1,Email
-11,Collaborators,3,what,"Work, projects",4,1,Email
-11,Collaborators,3,what,Shared experience,4,1,Email
-11,Collaborators,3,what,"Work, projects",4,1,Dropbox
-11,Public,3,what,"Work, projects",4,1,Personal website
-11,Public,3,what,"Work, projects",4,1,Instagram
-11,Collaborators,3,what,Gift,4,1,Print
-11,Public,3,what,"Work, projects",4,1,Print
-12,Me,1,through,Tinder,2,1,Tinder
-12,Me,1,through,Twitter,2,1,Twitter
-12,Me,1,through,Facebook,2,1,Facebook
-12,Me,1,through,Google Drive,2,1,Google Drive
-12,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-12,Me,1,through,Discord,2,1,Discord
-12,Twitter,2,with,Public,3,1,Twitter
-12,Facebook,2,with,Friends,3,1,Facebook
-12,Facebook,2,with,Family,3,1,Facebook
-12,Facebook,2,with,Colleagues,3,1,Facebook
-12,Google Drive,2,with,Close friends,3,1,Google Drive
-12,Facebook Messenger,2,with,Family,3,1,Facebook Messenger
-12,Facebook Messenger,2,with,Friends,3,1,Facebook Messenger
-12,Discord,2,with,Friends,3,1,Discord
-12,Tinder,2,what,Selfie,4,2,Tinder
-12,Facebook Messenger,2,what,Selfie,4,2,Facebook Messenger
-12,Facebook Messenger,2,what,Memes,4,2,Facebook Messenger
-12,Facebook Messenger,2,what,Aesthetic photos,4,2,Facebook Messenger
-12,Facebook Messenger,2,what,Animals/pets,4,2,Facebook Messenger
-12,Tinder,2,with,Selfie,4,1,Tinder
-12,Facebook Messenger,2,with,Selfie,4,1,Facebook Messenger
-12,Facebook Messenger,2,with,Memes,4,1,Facebook Messenger
-12,Facebook Messenger,2,with,Aesthetic photos,4,1,Facebook Messenger
-12,Facebook Messenger,2,with,Animals/pets,4,1,Facebook Messenger
-12,Public,3,what,Animals/pets,4,1,Twitter
-12,Friends,3,what,Selfie,4,1,Facebook
-12,Family,3,what,Selfie,4,1,Facebook
-12,Colleagues,3,what,"Work, projects",4,1,Facebook
-12,Close friends,3,what,Shared experience,4,1,Google Drive
-12,Close friends,3,what,Social photos,4,1,Google Drive
-12,Friends,3,what,Memes,4,1,Discord
-12,Friends,3,what,Social photos,4,1,Discord
-12,Friends,3,what,Selfie,4,1,Discord
-13,Me,1,through,Print,2,1,Print
-13,Me,1,through,SMS Text,2,1,SMS Text
-13,Me,1,through,Email,2,1,Email
-13,Print,2,with,Family,3,1,Print
-13,SMS Text,2,with,Family,3,1,SMS Text
-13,SMS Text,2,with,Friends,3,1,SMS Text
-13,Email,2,with,Overseas friends,3,1,Email
-13,Email,2,with,Collaborators,3,1,Email
-13,Email,2,with,Friends,3,1,Email
-13,Email,2,with,Employee,3,1,Email
-13,Email,2,with,Family,3,1,Email
-13,Family,3,what,People,4,1,Print
-13,Family,3,what,Important events ,4,1,Print
-13,Overseas friends,3,what,Scenery,4,1,Email
-13,Overseas friends,3,what,Family photos,4,1,Email
-13,Collaborators,3,what,Activism,4,1,Email
-13,Friends,3,what,Important events ,4,1,Email
-13,Friends,3,what,Scenery,4,1,Email
-13,Friends,3,what,Life updates,4,1,Email
-13,Employee,3,what,Note-taking,4,1,Email
-13,Family,3,what,Family photos,4,1,Email
-13,Family,3,what,Scenery,4,1,Email
-13,Family,3,what,Shared Interests,4,1,Email
-14,Me,1,through,Instagram,2,1,Instagram
-14,Me,1,through,SMS Text,2,1,SMS Text
-14,Me,1,through,Camera Roll,2,1,Camera Roll
-14,Instagram,2,with,Public,3,1,Instagram
-14,SMS Text,2,with,Family,3,1,SMS Text
-14,SMS Text,2,with,Friends,3,1,SMS Text
-14,Camera Roll,2,with,Friends,3,1,Camera Roll
-14,Public,3,what,Scenery,4,1,Instagram
-14,Family,3,what,Everyday activities,4,1,SMS Text
-14,Family,3,what,Shared experience,4,1,SMS Text
-14,Friends,3,what,Animals/pets,4,1,SMS Text
-14,Friends,3,what,Fun/funny photos,4,1,SMS Text
-14,Friends,3,what,Shared Interests,4,1,SMS Text
-14,Friends,3,what,Shared experience,4,1,SMS Text
-15,Me,1,through,Email,2,1,Email
-15,Me,1,through,Instagram,2,1,Instagram
-15,Me,1,through,Hardrive storage,2,1,Hardrive storage
-15,Me,1,through,SMS Text,2,1,SMS Text
-15,Email,2,with,Employee,3,1,Email
-15,Instagram,2,with,Family,3,1,Instagram
-15,Hardrive storage,2,with,Mum,3,1,Hardrive storage
-15,SMS Text,2,with,Friends,3,1,SMS Text
-15,SMS Text,2,with,Partner,3,1,SMS Text
-15,SMS Text,2,with,Mum,3,1,SMS Text
-15,Employee,3,what,Note-taking,4,1,Email
-15,Family,3,what,Holidays,4,1,Instagram
-15,Mum,3,what,Holidays,4,1,Hardrive storage
-15,Friends,3,what,Humour,4,1,SMS Text
-15,Friends,3,what,Meals,4,1,SMS Text
-15,Friends,3,what,Note-taking,4,1,SMS Text
-15,Partner,3,what,Note-taking,4,1,SMS Text
-15,Partner,3,what,Screenshots,4,1,SMS Text
-15,Partner,3,what,Old photos,4,1,SMS Text
-15,Partner,3,what,Everyday activities,4,1,SMS Text
-15,Partner,3,what,Meals,4,1,SMS Text
-15,Mum,3,what,Note-taking,4,1,SMS Text
-15,Mum,3,what,Holidays,4,1,SMS Text
-15,Mum,3,what,Shared experience,4,1,SMS Text
-16,Me,1,through,Email,2,1,Email
-16,Me,1,through,Dropbox,2,1,Dropbox
-16,Me,1,through,Facebook,2,1,Facebook
-16,Me,1,through,Instagram,2,1,Instagram
-16,Me,1,through,WhatsApp,2,1,WhatsApp
-16,Me,1,through,SMS Text,2,1,SMS Text
-16,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-16,Email,2,with,Friends,3,1,Email
-16,Instagram,2,with,Public,3,1,Instagram
-16,Instagram,2,with,Friends,3,1,Instagram
-16,Instagram,2,with,Colleagues,3,1,Instagram
-16,WhatsApp,2,with,Family,3,1,WhatsApp
-16,SMS Text,2,with,Friends,3,1,SMS Text
-16,SMS Text,2,with,Family,3,1,SMS Text
-16,SMS Text,2,with,Partner,3,1,SMS Text
-16,Facebook Messenger,2,with,Friends,3,1,Facebook Messenger
-16,Facebook Messenger,2,with,Work/business/customers,3,1,Facebook Messenger
-16,Dropbox,2,what,Holidays,4,2,Dropbox
-16,Facebook,2,what,Old photos,4,2,Facebook
-16,Facebook,2,what,"Work, projects",4,2,Facebook
-16,Dropbox,2,with,Holidays,4,1,Dropbox
-16,Facebook,2,with,Old photos,4,1,Facebook
-16,Facebook,2,with,"Work, projects",4,1,Facebook
-16,Friends,3,what,Shared experience,4,1,Email
-16,Public,3,what,"Work, projects",4,1,Instagram
-16,Friends,3,what,Holidays,4,1,Instagram
-16,Public,3,what,Scenery,4,1,Instagram
-16,Colleagues,3,what,"Work, projects",4,1,Instagram
-16,Family,3,what,Family photos,4,1,WhatsApp
-16,Family,3,what,Note-taking,4,1,WhatsApp
-16,Friends,3,what,Humour,4,1,SMS Text
-16,Family,3,what,Note-taking,4,1,SMS Text
-16,Partner,3,what,Note-taking,4,1,SMS Text
-16,Partner,3,what,Humour,4,1,SMS Text
-16,Friends,3,what,Note-taking,4,1,Facebook Messenger
-16,Friends,3,what,Humour,4,1,Facebook Messenger
-16,Friends,3,what,Social photos,4,1,Facebook Messenger
-16,Work/business/customers,3,what,Humour,4,1,Facebook Messenger
-17,Me,1,through,Print,2,1,Print
-17,Print,2,with,Overseas family,3,1,Print
-17,Print,2,with,Overseas friends,3,1,Print
-17,Print,2,with,Family,3,1,Print
-17,Overseas family,3,what,Family photos,4,1,Print
-17,Overseas friends,3,what,Family photos,4,1,Print
-17,Overseas family,3,what,Life updates,4,1,Print
-17,Overseas friends,3,what,Life updates,4,1,Print
-17,Overseas family,3,what,People,4,1,Print
-17,Overseas friends,3,what,People,4,1,Print
-17,Family,3,what,Family photos,4,1,Print
-18,Me,1,through,SMS Text,2,1,SMS Text
-18,SMS Text,2,with,Children,3,1,SMS Text
-18,SMS Text,2,with,Family,3,1,SMS Text
-18,SMS Text,2,with,Friends,3,1,SMS Text
-18,Children,3,what,Everyday activities,4,1,SMS Text
-18,Children,3,what,Scenery,4,1,SMS Text
-18,Family,3,what,Everyday activities,4,1,SMS Text
-18,Family,3,what,Scenery,4,1,SMS Text
-18,Friends,3,what,Everyday activities,4,1,SMS Text
-18,Overseas family,3,what,Everyday activities,4,1,SMS Text
-19,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-19,Me,1,through,SMS Text,2,1,SMS Text
-19,Me,1,through,Instagram,2,1,Instagram
-19,Me,1,through,WhatsApp,2,1,WhatsApp
-19,Me,1,through,Facebook,2,1,Facebook
-19,Facebook Messenger,2,with,Friends,3,1,Facebook Messenger
-19,Facebook Messenger,2,with,Partner,3,1,Facebook Messenger
-19,Facebook Messenger,2,with,Collaborators,3,1,Facebook Messenger
-19,Facebook Messenger,2,with,Family,3,1,Facebook Messenger
-19,SMS Text,2,with,Friends,3,1,SMS Text
-19,SMS Text,2,with,Family,3,1,SMS Text
-19,SMS Text,2,with,Partner,3,1,SMS Text
-19,Instagram,2,with,Friends,3,1,Instagram
-19,Instagram,2,with,Family,3,1,Instagram
-19,Instagram,2,with,Collaborators,3,1,Instagram
-19,Instagram,2,with,Partner,3,1,Instagram
-19,WhatsApp,2,with,Friends,3,1,WhatsApp
-19,WhatsApp,2,with,Family,3,1,WhatsApp
-19,WhatsApp,2,with,Partner,3,1,WhatsApp
-19,WhatsApp,2,with,Collaborators,3,1,WhatsApp
-19,Facebook,2,with,Friends,3,1,Facebook
-19,Facebook,2,with,Family,3,1,Facebook
-19,Facebook,2,with,Partner,3,1,Facebook
-19,Facebook,2,with,Collaborators,3,1,Facebook
-20,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-20,Me,1,through,Secondary Instagram account,2,1,Secondary Instagram account
-20,Me,1,through,Instagram,2,1,Instagram
-20,Me,1,through,Third Instagram account,2,1,Third Instagram account
-20,Me,1,through,SMS Text,2,1,SMS Text
-20,Me,1,through,WhatsApp,2,1,WhatsApp
-20,Me,1,through,Dating app,2,1,Dating app
-20,Facebook Messenger,2,with,Friends,3,1,Facebook Messenger
-20,Facebook Messenger,2,with,Family,3,1,Facebook Messenger
-20,Secondary Instagram account,2,with,Family,3,1,Secondary Instagram account
-20,Instagram,2,with,Public,3,1,Instagram
-20,Instagram,2,with,Friends,3,1,Instagram
-20,Instagram,2,with,Collaborators,3,1,Instagram
-20,Third Instagram account,2,with,Public,3,1,Third Instagram account
-20,SMS Text,2,with,Partner,3,1,SMS Text
-20,SMS Text,2,with,Family,3,1,SMS Text
-20,WhatsApp,2,with,Overseas friends,3,1,WhatsApp
-20,WhatsApp,2,with,Ex-partner,3,1,WhatsApp
-20,Dating app,2,what,Selfie,4,2,Dating app
-20,Dating app,2,with,Selfie,4,1,Dating app
-20,Family,3,what,Family photos,4,1,Secondary Instagram account
-20,Public,3,what,"Work, projects",4,1,Instagram
-20,Friends,3,what,"Work, projects",4,1,Instagram
-20,Public,3,what,Activism,4,1,Instagram
-20,Friends,3,what,Activism,4,1,Instagram
-20,Collaborators,3,what,"Work, projects",4,1,Instagram
-20,Collaborators,3,what,Activism,4,1,Instagram
-20,Public,3,what,"Work, projects",4,1,Third Instagram account
-20,Partner,3,what,Meals,4,1,SMS Text
-20,Partner,3,what,Aesthetic photos,4,1,SMS Text
-20,Partner,3,what,Selfie,4,1,SMS Text
-20,Partner,3,what,Family photos,4,1,SMS Text
-20,Partner,3,what,"Work, projects",4,1,SMS Text
-20,Family,3,what,Family photos,4,1,SMS Text
-20,Family,3,what,Shared experience,4,1,SMS Text
-20,Overseas friends,3,what,Life updates,4,1,WhatsApp
-20,Ex-partner,3,what,Family photos,4,1,WhatsApp
-21,Me,1,through,Snapchat,2,1,Snapchat
-21,Me,1,through,Instagram,2,1,Instagram
-21,Me,1,through,Facebook,2,1,Facebook
-21,Me,1,through,SMS Text,2,1,SMS Text
-21,Me,1,through,iCloud,2,1,iCloud
-21,Me,1,through,WhatsApp,2,1,WhatsApp
-21,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-21,Snapchat,2,with,Friends,3,1,Snapchat
-21,Instagram,2,with,Friends,3,1,Instagram
-21,Facebook,2,with,Friends,3,1,Facebook
-21,SMS Text,2,with,Friends,3,1,SMS Text
-21,SMS Text,2,with,Family,3,1,SMS Text
-21,iCloud,2,with,Partner,3,1,iCloud
-21,WhatsApp,2,with,Family,3,1,WhatsApp
-21,SMS Text,2,what,Family photos,4,2,SMS Text
-21,SMS Text,2,with,Family photos,4,1,SMS Text
-21,Friends,3,what,Family photos,4,1,Snapchat
-21,Friends,3,what,Fun/funny photos,4,1,Snapchat
-21,Friends,3,what,Photo-worthy moments,4,1,Instagram
-21,Friends,3,what,Photo-worthy moments,4,1,Facebook
-21,Partner,3,what,Family photos,4,1,iCloud
-21,Family,3,what,Family photos,4,1,WhatsApp
-22,Me,1,through,iCloud,2,1,iCloud
-22,Me,1,through,LinkedIn,2,1,LinkedIn
-22,Me,1,through,Instagram,2,1,Instagram
-22,Me,1,through,WhatsApp,2,1,WhatsApp
-22,Me,1,through,Print,2,1,Print
-22,Me,1,through,Airdrop,2,1,Airdrop
-22,Me,1,through,SMS Text,2,1,SMS Text
-22,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-22,iCloud,2,with,Partner,3,1,iCloud
-22,Instagram,2,with,Friends,3,1,Instagram
-22,WhatsApp,2,with,Close friends,3,1,WhatsApp
-22,WhatsApp,2,with,Family,3,1,WhatsApp
-22,Print,2,with,Family,3,1,Print
-22,Print,2,with,Close friends,3,1,Print
-22,Airdrop,2,with,Partner,3,1,Airdrop
-22,Airdrop,2,with,Friends,3,1,Airdrop
-22,SMS Text,2,with,Friends,3,1,SMS Text
-22,SMS Text,2,with,Family,3,1,SMS Text
-22,Facebook Messenger,2,with,Friends,3,1,Facebook Messenger
-22,LinkedIn,2,what,"Work, projects",4,2,LinkedIn
-22,LinkedIn,2,with,"Work, projects",4,1,LinkedIn
-22,Partner,3,what,Family photos,4,1,iCloud
-22,Friends,3,what,Holidays,4,1,Instagram
-22,Friends,3,what,Family photos,4,1,Instagram
-22,Friends,3,what,Social photos,4,1,Instagram
-22,Friends,3,what,Photo-worthy moments,4,1,Instagram
-22,Close friends,3,what,Holidays,4,1,WhatsApp
-22,Close friends,3,what,Family photos,4,1,WhatsApp
-22,Family,3,what,Family photos,4,1,WhatsApp
-22,Family,3,what,Family photos,4,1,Print
-22,Close friends,3,what,Family photos,4,1,Print
-22,Partner,3,what,Family photos,4,1,Airdrop
-22,Friends,3,what,Social photos,4,1,Airdrop
-22,Friends,3,what,Important events ,4,1,Airdrop
-22,Friends,3,what,Family photos,4,1,SMS Text
-22,Family,3,what,Family photos,4,1,SMS Text
-22,Friends,3,what,Family photos,4,1,Facebook Messenger
-23,Me,1,through,WhatsApp,2,1,WhatsApp
-23,Me,1,through,Print,2,1,Print
-23,Me,1,through,SMS Text,2,1,SMS Text
-23,Me,1,through,Instagram,2,1,Instagram
-23,Me,1,through,Email,2,1,Email
-23,WhatsApp,2,with,Family,3,1,WhatsApp
-23,SMS Text,2,with,Partner,3,1,SMS Text
-23,Instagram,2,what,"Work, projects",4,2,Instagram
-23,Instagram,2,with,"Work, projects",4,1,Instagram
-23,Family,3,what,Everyday activities,4,1,WhatsApp
-24,Me,1,through,WhatsApp,2,1,WhatsApp
-24,Me,1,through,Email,2,1,Email
-24,WhatsApp,2,with,Children,3,1,WhatsApp
-24,WhatsApp,2,with,Family,3,1,WhatsApp
-24,WhatsApp,2,with,Overseas friends,3,1,WhatsApp
-24,Email,2,what,Note-taking,4,2,Email
-24,Email,2,with,Note-taking,4,1,Email
-24,Children,3,what,Shared experience,4,1,WhatsApp
-25,Me,1,through,SMS Text,2,1,SMS Text
-25,Me,1,through,Email,2,1,Email
-25,Me,1,through,WhatsApp,2,1,WhatsApp
-25,Me,1,through,Instagram,2,1,Instagram
-25,WhatsApp,2,with,Friends,3,1,WhatsApp
-25,Instagram,2,with,Children,3,1,Instagram
-25,SMS Text,2,what,Shared experience,4,2,SMS Text
-25,SMS Text,2,what,Old photos,4,2,SMS Text
-25,Email,2,what,Note-taking,4,2,Email
-25,SMS Text,2,with,Shared experience,4,1,SMS Text
-25,SMS Text,2,with,Old photos,4,1,SMS Text
-25,Email,2,with,Note-taking,4,1,Email
-25,Friends,3,what,Social photos,4,1,WhatsApp
-25,Friends,3,what,Scenery,4,1,WhatsApp
-26,Me,1,through,WhatsApp,2,1,WhatsApp
-26,Me,1,through,SMS Text,2,1,SMS Text
-26,Me,1,through,Facebook Messenger,2,1,Facebook Messenger
-26,Me,1,through,Instagram,2,1,Instagram
-26,Me,1,through,Print,2,1,Print
+id,source,srcLvel,relationship,target,tarLvel
+1,Me,,through,BeReal,
+1,BeReal,,what,Everyday photos,
+1,BeReal,,with,Close friends,
+1,Me,,through,Instagram,
+1,Instagram,,what,Aesthetic photos,
+1,Instagram,,what,Important events ,
+1,Instagram,,what,Fun/funny photos,
+1,Instagram,,with,Close friends,
+1,Instagram,,with,Family,
+1,Instagram,,with,Acquaintances,
+1,Instagram,,with,Teachers,
+1,Me,,through,Snapchat,
+1,Snapchat,,with,Friends,
+1,Snapchat,,what,Selfie,
+1,Snapchat,,what,Fun/funny photos,
+1,Snapchat,,what,Everyday photos,
+1,Me,,through,SMS Text,
+1,SMS Text,,with,Close friends,
+1,SMS Text,,with,Family,
+1,SMS Text,,what,Nice memories,
+1,SMS Text,,what,Screenshots,
+2,SMS Text,,with,Friends,
+2,SMS Text,,with,Cousins,
+2,SMS Text,,what,Photo-worthy moments,
+2,Me,,through,WhatsApp,
+2,WhatsApp,,with,Friends,
+2,WhatsApp,,with,Family,
+2,WhatsApp,,with,Cousins,
+2,WhatsApp,,what,Photo-worthy moments,
+2,Me,,through,Email,
+2,Email,,with,Colleagues,
+2,Email,,with,Collaborators,
+2,Email,,what,"Work, projects",
+2,Me,,through,Print,
+2,Print,,what,"Work, projects",
+2,Print,,with,Family,
+2,Print,,what,Holidays,
+2,Print,,with,Kids' friends,
+2,Me,,through,Dropbox,
+2,Dropbox,,with,Colleagues,
+2,Dropbox,,with,Collaborators,
+2,Dropbox,,what,"Work, projects",
+2,Me,,through,Signal,
+2,Signal,,with,Family,
+2,Signal,,with,Friends,
+2,Signal,,with,Cousins,
+2,Signal,,what,Photo-worthy moments,
+3,Me,,through,Facebook Messenger,
+3,Facebook Messenger,,with,Friends,
+3,Facebook Messenger,,with,Family,
+3,Facebook Messenger,,with,Work/business/customers,
+3,Signal,,with,Close friends,
+3,WhatsApp,,with,Childcare group,
+3,Me,,through,Google Street View,
+3,Google Street View,,what,Place reviews,
+3,Google Street View,,what,360 virtual tour,
+3,Me,,through,Personal website,
+3,Personal website,,with,Work/business/customers,
+3,Me,,through,LinkedIn,
+3,LinkedIn,,what,"Work, projects",
+4,Family,,what,Animals/pets,
+4,Family,,what,Holidays,
+4,Friends,,what,Social photos,
+4,SMS Text,,with,Colleagues,
+4,Colleagues,,what,Landscape/architecture,
+4,Print,,with,Friends,
+4,Family,,what,Homemade cards,
+4,Friends,,what,Homemade cards,
+4,Me,,through,Personal notes,
+4,Personal notes,,what,"Work, projects",
+5,Instagram,,what,Landscape/architecture,
+5,Instagram,,what,People,
+5,Instagram,,what,Objects,
+5,Instagram,,what,Digitised film photos,
+5,Instagram,,what,Plants,
+5,Personal website,,what,Landscape/architecture,
+5,Personal website,,what,People,
+5,Personal website,,what,Objects,
+5,Personal website,,what,Digitised film photos,
+5,Personal website,,what,Plants,
+5,Me,,through,Google Drive,
+5,Google Drive,,with,Colleagues,
+5,Google Drive,,with,Friends,
+5,Friends,,what,Memes,
+5,Friends,,what,Plants,
+5,Colleagues,,what,"Work, projects",
+6,Group chat,,what,Meals,
+6,Facebook Messenger,,with,Group chat,
+6,SMS Text,,with,Partner,
+6,Partner,,what,Animals/pets,
+6,Partner,,what,Note-taking,
+6,Partner,,what,Humour,
+6,Close friends,,what,Shared Interests,
+6,Close friends,,what,Humour,
+6,Group chat,,with,Humour,
+6,Instagram,,what,Memes,
+6,Instagram,,what,Humour,
+6,Instagram,,through,Instagram Stories,
+6,Instagram Stories,,what,Social photos,
+6,Instagram Stories,,what,Everyday activities,
+7,Family,,what,Selfie,
+7,Family,,what,Social photos,
+7,WhatsApp,,with,Group chat,
+7,Group chat,,what,Shared Interests,
+7,Friends,,what,Gift,
+7,Close friends,,what,Individual interests,
+7,Family,,what,Individual interests,
+7,Instagram,,what,Activism,
+8,Friends,,what,Screenshots,
+8,Family,,what,Old photos,
+8,Instagram,,with,Friends,
+8,Instagram,,with,Public,
+8,Public,,what,"Work, projects",
+8,Friends,,what,Animals/pets,
+8,Friends,,what,Old photos,
+9,WhatsApp,,with,Colleagues,
+9,WhatsApp,,with,Friends without social media,
+9,Family,,what,Family photos,
+9,Family,,what,"Work, projects",
+9,SMS Text,,with,Mum,
+9,Mum,,what,Everyday activities,
+9,Friends,,what,Shared Interests,
+9,Friends,,what,Everyday activities,
+9,Me,,through,HelloTalk,
+9,HelloTalk,,with,Learning community,
+9,Learning community,,what,Scenery,
+9,Me,,through,Hardrive storage,
+9,Hardrive storage,,with,Friends,
+9,Friends,,what,Shared experience,
+9,Instagram,,with,Group chat,
+9,Group chat,,what,Memes,
+9,Instagram Stories,,with,Friends,
+9,Friends,,what,Meals,
+9,Instagram Stories,,with,Public,
+9,Public,,what,Individual interests,
+9,Me,,through,Camera Roll,
+9,Camera Roll,,what,Screenshots,
+9,Camera Roll,,what,Memes,
+9,Camera Roll,,what,Holidays,
+9,Camera Roll,,what,Note-taking,
+9,Camera Roll,,what,"Work, projects",
+9,Camera Roll,,what,Individual interests,
+9,Camera Roll,,what,Meals,
+10,Family,,what,Gift,
+10,Friends,,what,Scenery,
+10,Friends,,what,Selfie,
+10,Friends,,what,Family photos,
+10,Camera Roll,,what,Nice memories,
+10,Family,,what,People,
+10,Family,,what,Humour,
+10,Close friends,,what,Everyday activities,
+10,Close friends,,what,Important events ,
+10,Close friends,,what,Life updates,
+10,Colleagues,,what,Shared experience,
+10,Me,,through,Slack,
+10,Slack,,with,Colleagues,
+10,Me,,through,Hinge,
+10,Hinge,,what,Selfie,
+10,Me,,through,Airdrop,
+10,Airdrop,,with,Colleagues,
+10,Airdrop,,with,Friends,
+10,Me,,through,DADAABC,
+10,DADAABC,,with,Learning community,
+10,Learning community,,what,Note-taking,
+11,Collaborators,,what,Old photos,
+11,Collaborators,,what,"Work, projects",
+11,Collaborators,,what,Shared experience,
+11,Personal website,,with,Public,
+11,Print,,with,Collaborators,
+11,Collaborators,,what,Gift,
+11,Print,,with,Public,
+12,Me,,through,Tinder,
+12,Tinder,,what,Selfie,
+12,Me,,through,Twitter,
+12,Twitter,,with,Public,
+12,Public,,what,Animals/pets,
+12,Me,,through,Facebook,
+12,Facebook,,with,Friends,
+12,Facebook,,with,Family,
+12,Facebook,,with,Colleagues,
+12,Google Drive,,with,Close friends,
+12,Close friends,,what,Shared experience,
+12,Close friends,,what,Social photos,
+12,Facebook Messenger,,what,Selfie,
+12,Facebook Messenger,,what,Memes,
+12,Facebook Messenger,,what,Aesthetic photos,
+12,Facebook Messenger,,what,Animals/pets,
+12,Me,,through,Discord,
+12,Discord,,with,Friends,
+13,Family,,what,Important events ,
+13,Email,,with,Overseas friends,
+13,Overseas friends,,what,Scenery,
+13,Overseas friends,,what,Family photos,
+13,Collaborators,,what,Activism,
+13,Email,,with,Friends,
+13,Friends,,what,Important events ,
+13,Friends,,what,Life updates,
+13,Email,,with,Employee,
+13,Employee,,what,Note-taking,
+13,Email,,with,Family,
+13,Family,,what,Scenery,
+13,Family,,what,Shared Interests,
+14,Public,,what,Scenery,
+14,Family,,what,Everyday activities,
+14,Family,,what,Shared experience,
+14,Friends,,what,Fun/funny photos,
+14,Camera Roll,,with,Friends,
+15,Hardrive storage,,with,Mum,
+15,Mum,,what,Holidays,
+15,Friends,,what,Humour,
+15,Friends,,what,Note-taking,
+15,Partner,,what,Screenshots,
+15,Partner,,what,Old photos,
+15,Partner,,what,Everyday activities,
+15,Partner,,what,Meals,
+15,Mum,,what,Note-taking,
+15,Mum,,what,Shared experience,
+16,Dropbox,,what,Holidays,
+16,Facebook,,what,Old photos,
+16,Facebook,,what,"Work, projects",
+16,Friends,,what,Holidays,
+16,Instagram,,with,Colleagues,
+16,Family,,what,Note-taking,
+16,Work/business/customers,,what,Humour,
+17,Print,,with,Overseas family,
+17,Print,,with,Overseas friends,
+17,Overseas family,,what,Family photos,
+17,Overseas family,,what,Life updates,
+17,Overseas friends,,what,Life updates,
+17,Overseas family,,what,People,
+17,Overseas friends,,what,People,
+18,SMS Text,,with,Children,
+18,Children,,what,Everyday activities,
+18,Children,,what,Scenery,
+18,Overseas family,,what,Everyday activities,
+19,Facebook Messenger,,with,Partner,
+19,Facebook Messenger,,with,Collaborators,
+19,Instagram,,with,Collaborators,
+19,Instagram,,with,Partner,
+19,WhatsApp,,with,Partner,
+19,WhatsApp,,with,Collaborators,
+19,Facebook,,with,Partner,
+19,Facebook,,with,Collaborators,
+20,Me,,through,Secondary Instagram account,
+20,Me,,through,Third Instagram account,
+20,Secondary Instagram account,,with,Family,
+20,Friends,,what,"Work, projects",
+20,Public,,what,Activism,
+20,Friends,,what,Activism,
+20,Third Instagram account,,with,Public,
+20,Partner,,what,Aesthetic photos,
+20,Partner,,what,Selfie,
+20,Partner,,what,Family photos,
+20,Partner,,what,"Work, projects",
+20,WhatsApp,,with,Overseas friends,
+20,WhatsApp,,with,Ex-partner,
+20,Ex-partner,,what,Family photos,
+20,Me,,through,Dating app,
+20,Dating app,,what,Selfie,
+21,Friends,,what,Photo-worthy moments,
+21,SMS Text,,what,Family photos,
+21,Me,,through,iCloud,
+21,iCloud,,with,Partner,
+22,WhatsApp,,with,Close friends,
+22,Close friends,,what,Holidays,
+22,Close friends,,what,Family photos,
+22,Print,,with,Close friends,
+22,Airdrop,,with,Partner,
+23,Instagram,,what,"Work, projects",
+24,WhatsApp,,with,Children,
+24,Children,,what,Shared experience,
+24,Email,,what,Note-taking,
+25,SMS Text,,what,Shared experience,
+25,SMS Text,,what,Old photos,
+25,Instagram,,with,Children,

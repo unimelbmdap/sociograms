@@ -1,19 +1,31 @@
 <template>
-  <div class="h-screen">
+  <div class="demo-control-panel">
+    <label>Selected:</label>
+    <el-select
+      v-model="selectedNodes"
+      placeholder="Select"
+    >
+      <el-option
+        v-for="(node, key) in props.snodes"
+        :key="key"
+        :label="node.name"
+        :value="key"
+      />
+    </el-select></div>
+  <div class="h-full">
     <v-network-graph
       :zoom-level="0.5"
       :nodes="props.snodes" 
       :edges="props.sedges" 
       :layouts="layouts"
-      :configs="configs"> 
-      <template>
-      </template>
+      :configs="configs"
+      :selected-nodes="selectedNodes"> 
   </v-network-graph>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, reactive} from "vue"
+import { ref, reactive, watch} from "vue"
 import * as vNG from "v-network-graph"
 
 import {ForceLayout} from "v-network-graph/lib/force-layout"
@@ -24,8 +36,11 @@ const props = defineProps({
   sedges: []
 })
 
+defineEmits(['selectedNodes'])
+
 const nodes = reactive({})
 const edges = reactive({})
+const selectedNodes = ref<string[]>([])
 
 // The fixed position of the node can be specified.
 const layouts = ref({
@@ -50,21 +65,10 @@ const configs = reactive(
           return d3
             .forceSimulation(nodes)
             .force("edge", forceLink.distance(80).strength(0.05))
-            .force("charge", d3.forceManyBody().strength(-300))
+            .force("charge", d3.forceManyBody().strength(-500))
+            .force("center", d3.forceCenter().strength(0.05))
             .alphaMin(0.001)
-        },
-    node: {
-      label: {
-        visible: true,
-        fontFamily: undefined,
-        fontSize: 11,
-        lineHeight: 1.1,
-        color: "#000000",
-        margin: 4,
-        direction: "south",
-        text: "name"
-      }
-  },
+        }
       }),
     },
     node: {
@@ -75,6 +79,8 @@ const configs = reactive(
     },
   })
 )
+configs.node.selectable=true
+
 
 </script>
 
