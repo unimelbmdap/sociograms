@@ -31,7 +31,7 @@ print(list(edges[edges['source'].isin(nextnextlevelEdges)]['target'].unique()))
 
 # testing, just drop the outer node links (so they'll be orphans)
 edges[~edges['source'].isin(nextlevelEdges)][edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
-# edges[edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
+edges[edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
 
 # nodes
 nodes['label'] = nodes['name']
@@ -51,4 +51,5 @@ nodes['name'] = nodes['label']
 nodecols = ['name','type','label','level','color']
 quotecols = ['Node', 'Quote', 'File']
 
-nodes[nodecols].to_json("nodes.json",indent=2, mode='w',orient='index')
+
+nodes[nodes['level']<3][nodecols].to_json("nodes.json",indent=2, mode='w',orient='index')

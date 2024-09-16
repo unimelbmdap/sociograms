@@ -1,13 +1,8 @@
 <template>
-  <div>
 
-      <button class="text-sm font-medium border border-gray-200 rounded-full px-3 py-1 hover:bg-gray-100" @click="$emit('selectInstaNode')">
-        Select Instagram Node
-      </button>
- </div>
   <div class="h-96">
     <v-network-graph
-      vmodel:selected-nodes="selectedNodes"
+      v-model:selected-nodes="filteredNodes"
       :zoom-level="0.5"
       :nodes="props.snodes" 
       :edges="props.sedges" 
@@ -15,6 +10,8 @@
       :configs="configs"> 
   </v-network-graph>
   </div>
+  <div>{{filteredNodes}}</div>
+
 </template>
 
 <script setup lang="ts">
@@ -30,12 +27,9 @@ const props = defineProps({
   sedges: []
 })
 
-defineEmits(['selectInstaNode'])
-
 
 const nodes = reactive({})
 const edges = reactive({})
-const selectedNodes = ref<string[]>([])
 
 // The fixed position of the node can be specified.
 const layouts = ref({

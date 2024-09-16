@@ -16,7 +16,7 @@
 <script setup>
 import { computed } from 'vue'
 const props = defineProps({
-  personID: String,
+  personID: Number,
   theirQuote: String,
   node: String,
   theirFile: String
