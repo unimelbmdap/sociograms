@@ -8,7 +8,6 @@
           :snodes="nodes"
           :sedges="filteredEdges"
         /></div>
-
     </section>
     <section>
       <h2 class="text-2xl">Individuals' social sharing practices for personal photography</h2>
@@ -41,7 +40,6 @@ const { nodes,
         filteredQuotes,
         nodesLoading, 
         fetchData} = chooseNodes()
-
 
 onMounted(() => {
   fetchData()

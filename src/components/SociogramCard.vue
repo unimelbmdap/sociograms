@@ -2,15 +2,14 @@
 
   <div class="h-96">
     <v-network-graph
-      v-model:selected-nodes="filteredNodes"
       :zoom-level="0.5"
-      :nodes="props.snodes" 
-      :edges="props.sedges" 
+      :nodes="nodes" 
+      :edges="filteredEdges" 
       :layouts="layouts"
-      :configs="configs"> 
+      :configs="configs"
+      :event-handlers="eventHandlers"> 
   </v-network-graph>
   </div>
-  <div>{{filteredNodes}}</div>
 
 </template>
 
@@ -20,16 +19,16 @@ import * as vNG from "v-network-graph"
 
 import {ForceLayout} from "v-network-graph/lib/force-layout"
 import type {ForceNodeDatum,ForceEdgeDatum} from "v-network-graph/lib/force-layout"
+import chooseNodes from '@/composables/chooseNodes'
 
+const {nodes, filteredNodes, filteredEdges, filterByNode, selectNode} = chooseNodes()
 
-const props = defineProps({
-  snodes: [],
-  sedges: []
-})
-
-
-const nodes = reactive({})
-const edges = reactive({})
+const eventHandlers: vNG.EventHandlers = {
+  "node:click": ({ node }) => {
+    console.log('clicked a node ')
+    filterByNode(node)
+  },
+}
 
 // The fixed position of the node can be specified.
 const layouts = ref({

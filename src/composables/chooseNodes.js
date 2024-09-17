@@ -9,6 +9,7 @@ let filteredEdges=ref()
 const nodesLoading = ref(false)
 const edgesLoading = ref(false)
 const quotesLoading = ref(false)
+const selectNode=ref()
 
 function fetchData() {
     fetchNodes()
@@ -55,14 +56,21 @@ const fetchQuotes = async () => {
     }
   }
 
+  function filterByNode(selectNode) {
+    console.log('filter by ')
+    console.log(selectNode)
+  }
+
 export default function chooseNodes()
 {
     return {
         nodes,
+        selectNode,
         filteredNodes,
         filteredEdges,
         filteredQuotes,
         nodesLoading,
-        fetchData
+        fetchData,
+        filterByNode
     }
 }
