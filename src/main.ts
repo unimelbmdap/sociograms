@@ -1,10 +1,17 @@
-import './assets/main.css'
-import { createApp } from "vue"
-import VNetworkGraph from "v-network-graph"
-import "v-network-graph/lib/style.css"
-import App from "./App.vue"
+import "./assets/main.css";
+import { createApp } from "vue";
+import VNetworkGraph from "v-network-graph";
+import App from "./App.vue";
 
-const app = createApp(App)
+//import { createRouter } from "vue-router";
+import router from "./router";
+import "v-network-graph/lib/style.css";
+import { createPinia } from "pinia";
 
-app.use(VNetworkGraph)
-app.mount("#app")
+const app = createApp(App);
+
+app.use(VNetworkGraph);
+app.use(createPinia());
+app.use(router);
+
+app.mount("#app");
