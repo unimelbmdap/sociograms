@@ -1,7 +1,7 @@
 <template>
   <div class="h-96">
     <v-network-graph
-      :zoom-level="0.5"
+      :zoom-level="0.3"
       :nodes="props.snodes"
       :edges="props.sedges"
       :layouts="layouts"
@@ -75,7 +75,7 @@ const configs = reactive(
     },
     node: {
       normal: {
-        type: (n) => (n.label === "Me" ? "circle" : "rect"),
+        type: (n) => ((n.type === "Person") || (n.type ===  "Recipients") ? "circle" : "rect"),
         color: (n) => n.color,
         radius: (n) => (n.label === "Me" ? 50 : 20),
       },

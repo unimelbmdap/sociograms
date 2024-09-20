@@ -28,13 +28,9 @@ d = {'source': ['Me'],'target': ['TikTok']}
 newEdge =pd.DataFrame(data=d)
 edges = pd.concat([edges[edgecols],newEdge],axis=0).reset_index()
 
-# next to try is more star shape so
-# Me - Platform - Who to - What
-# so if who to is not specified has value 'unspecified' or '' blank?
-
-
 # testing, just drop the outer node links (so they'll be orphans)
 #edges[~edges['source'].isin(nextlevelEdges)][edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
+
 edges[edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
 
 # nodes
