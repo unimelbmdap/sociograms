@@ -1,9 +1,13 @@
 <template>
-  <div class="h-96">
+  <h1>
+    Secret Jasmine View to change the Nodes and their Edges (ie connectors)
+  </h1>
+
+  <div class="min-h-96">
     <v-network-graph
       :zoom-level="0.5"
-      :nodes="props.snodes"
-      :edges="props.sedges"
+      :nodes="nodes"
+      :edges="edges"
       :layouts="layouts"
       :configs="configs"
       :event-handlers="eventHandlers"
@@ -13,45 +17,19 @@
 </template>
 
 <script setup lang="ts">
+import useNodes from "@/composables/useNodes";
+import SociogramCard from "@/components/SociogramCard.vue";
+
 import { ref, reactive } from "vue";
 import * as vNG from "v-network-graph";
-import { useRouter } from "vue-router";
 
 import { ForceLayout } from "v-network-graph/lib/force-layout";
 import type {
   ForceNodeDatum,
   ForceEdgeDatum,
 } from "v-network-graph/lib/force-layout";
-import router from "@/router";
 
-const props = defineProps({
-  snodes: [],
-  sedges: [],
-});
-
-const eventHandlers: vNG.EventHandlers = {
-  "node:click": ({ node }) => {
-    console.log("selected node is");
-    console.log(node);
-    router.push({
-      name: "quotesview",
-      params: {
-        selectedNode: node,
-      },
-    });
-  },
-};
-
-// The fixed position of the node can be specified.
-const layouts = ref({
-  nodes: {
-    node0: {
-      x: 0,
-      y: 0,
-      fixed: true, // Unaffected by force
-    },
-  },
-});
+const { nodes, edges, nodesLoading } = useNodes();
 
 const configs = reactive(
   vNG.defineConfigs({
@@ -88,11 +66,3 @@ const configs = reactive(
   }),
 );
 </script>
-
-<style>
-.graph {
-  width: 880px;
-  height: 600px;
-  border: 1px solid #000;
-}
-</style>

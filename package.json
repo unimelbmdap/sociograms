@@ -11,7 +11,7 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "server": "json-server --watch simpledb.json --port 3001"
+    "server": "json-server --watch newdb.json --port 3001"
   },
   "dependencies": {
     "d3": "^7.9.0",

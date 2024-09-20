@@ -1,11 +1,9 @@
 import { ref } from "vue";
-import { useRoute } from "vue-router";
 
-const nodes = ref();
-const quotes = ref();
-const edges = ref();
+const nodes = ref([]);
+const quotes = ref([]);
+const edges = ref([]);
 const nodesLoading = ref(false);
-const route = useRoute();
 
 function fetchData() {
   fetchNodes();
@@ -20,6 +18,8 @@ const fetchNodes = async () => {
     nodes.value = await response.json();
   } finally {
     nodesLoading.value = false;
+
+    console.log("got nodes");
   }
 };
 
@@ -47,6 +47,6 @@ export default function useNodes() {
     edges,
     quotes,
     nodesLoading,
-    fetchData
+    fetchData,
   };
 }

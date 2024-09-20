@@ -23,6 +23,10 @@ print(nextnextlevelEdges)
 print("are there another level again? - think about dropping them")
 print(list(edges[edges['source'].isin(nextnextlevelEdges)]['target'].unique()))
 
+# fix up data with edge from "Me" to "TikTok"
+d = {'source': ['Me'],'target': ['TikTok']}
+newEdge =pd.DataFrame(data=d)
+edges = pd.concat([edges[edgecols],newEdge],axis=0).reset_index()
 
 # next to try is more star shape so
 # Me - Platform - Who to - What
@@ -30,7 +34,7 @@ print(list(edges[edges['source'].isin(nextnextlevelEdges)]['target'].unique()))
 
 
 # testing, just drop the outer node links (so they'll be orphans)
-edges[~edges['source'].isin(nextlevelEdges)][edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
+#edges[~edges['source'].isin(nextlevelEdges)][edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
 edges[edgecols].to_json("edges.json",indent=2, mode='w',orient='index')
 
 # nodes
@@ -49,7 +53,16 @@ nodes.set_index('name', inplace=True)
 nodes['name'] = nodes['label']
 
 nodecols = ['name','type','label','level','color']
+
+# just save a simple view of the nodes
+#nodes[nodes['level']<3][nodecols].to_json("nodes.json",indent=2, mode='w',orient='index')
+
+# save all the nodes
+nodes[nodecols].to_json("nodes.json",indent=2, mode='w',orient='index')
+
+# save the quotes
 quotecols = ['Node', 'Quote', 'File']
+quotes[quotecols].to_json("quotes.json",indent=2,mode='w',orient='index')
 
 
-nodes[nodes['level']<3][nodecols].to_json("nodes.json",indent=2, mode='w',orient='index')
+
