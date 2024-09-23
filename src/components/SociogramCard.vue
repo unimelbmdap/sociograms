@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from "vue";
+import { ref, reactive, computed } from "vue";
 import * as vNG from "v-network-graph";
 import { useRouter } from "vue-router";
 
@@ -41,8 +41,7 @@ const eventHandlers: vNG.EventHandlers = {
     });
   },
 };
-
-// The fixed position of the node can be specified.
+// The fixed position of the 'Me' node is specified, and the the 'Recipient' nodes are pushed to the bottom of the window
 const layouts = ref({
   nodes: {
     node0: {
@@ -52,6 +51,8 @@ const layouts = ref({
     },
   },
 });
+console.log("layouts =====")
+console.log(layouts.value)
 
 const configs = reactive(
   vNG.defineConfigs({
@@ -75,7 +76,8 @@ const configs = reactive(
     },
     node: {
       normal: {
-        type: (n) => ((n.type === "Person") || (n.type ===  "Recipients") ? "circle" : "rect"),
+        type: (n) =>
+          n.type === "Person" || n.type === "Recipients" ? "circle" : "rect",
         color: (n) => n.color,
         radius: (n) => (n.label === "Me" ? 50 : 20),
       },

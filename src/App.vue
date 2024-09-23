@@ -3,7 +3,7 @@
     <h1 class="text-4xl">
       Digital photography: mediation, memory and visual communication
     </h1>
-    <section v-if="!isAdmin"  class="min-h-96">
+    <section v-if="!isAdmin" class="min-h-96">
       <h2 class="text-2xl">Across the practices, platforms and people</h2>
       <div><SociogramCard :snodes="filteredNodesObject" :sedges="edges" /></div>
     </section>
@@ -12,7 +12,7 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onMounted, computed } from "vue";
 import SociogramCard from "@/components/SociogramCard.vue";
 import useNodes from "@/composables/useNodes";
@@ -48,6 +48,7 @@ const filteredNodesObject = computed(() => {
   return result; // Return the newly structured object
 });
 
-const isAdmin = computed( () => {return route.path === "/admin" });
-
+const isAdmin = computed(() => {
+  return route.path === "/admin";
+});
 </script>

@@ -1,9 +1,8 @@
 <template>
-
-    <h2 class="text-2xl">
-      Individuals' social sharing practices through
-      {{ $route.params.selectedNode }}
-    </h2>
+  <h2 class="text-2xl">
+    Individuals' social sharing practices through
+    {{ $route.params.selectedNode }}
+  </h2>
 
   <section>
     <div><SociogramCard :snodes="filteredNodes" :sedges="edges" /></div>
@@ -20,10 +19,7 @@
       />
     </div>
     <div v-else>
-      <p>
-        No quotes to show yet, please click on a node from the graph
-        above
-      </p>
+      <p>No quotes to show yet, please click on a node from the graph above</p>
     </div>
   </section>
 </template>
@@ -37,8 +33,6 @@ import SociogramCard from "@/components/SociogramCard.vue";
 
 const route = useRoute();
 const { nodes, quotes, edges, nodesLoading } = useNodes();
-
-
 
 // Build adjacency list
 const buildAdjacencyList = (edges) => {
@@ -58,12 +52,16 @@ const buildAdjacencyList = (edges) => {
 // Watch for edges and build adjacency list
 const adjacencyList = ref({});
 
-watch(edges, (newEdges) => {
-  adjacencyList.value = buildAdjacencyList(newEdges);
-}, { immediate: true });
+watch(
+  edges,
+  (newEdges) => {
+    adjacencyList.value = buildAdjacencyList(newEdges);
+  },
+  { immediate: true },
+);
 
 // Find connected nodes (children and grandchildren)
-const findConnectedNodes = (node, depth = 2) => {
+const findConnectedNodes = (node, depth = 3) => {
   const visited = new Set();
   const results = [];
 
@@ -72,10 +70,11 @@ const findConnectedNodes = (node, depth = 2) => {
     visited.add(currentNode);
     const children = adjacencyList.value[currentNode] || [];
     results.push(...children);
-    children.forEach(child => traverse(child, currentDepth + 1));
+    children.forEach((child) => traverse(child, currentDepth + 1));
   };
 
   traverse(node, 1); // Start from depth 1
+  // results.push(node) // include the selected node as well
   return results;
 };
 
@@ -106,5 +105,4 @@ const filteredQuotes = computed(() => {
     .filter((q) => connectedNodes.value.includes(q.Node))
     .sort((a, b) => a.Quote.length - b.Quote.length);
 });
-
 </script>

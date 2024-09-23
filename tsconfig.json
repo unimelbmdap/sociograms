@@ -9,6 +9,12 @@
     "noImplicitAny": false,
     "emitDeclarationOnly": true, // use this field instead of "noEmit"
   },
+  "include": [
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
   "files": [],
   "references": [
     {
